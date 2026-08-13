@@ -21,10 +21,10 @@ choose from the many
 
 ### CocoaPods
 
-Add SwiftLog to your `Podfile`:
+Add YQSwiftLog to your `Podfile`:
 
 ```ruby
-pod 'SwiftLog', '~> 1.15.0'
+pod 'YQSwiftLog', '~> 1.15.0'
 ```
 
 Then import the `Logging` module:
