@@ -11,6 +11,11 @@ Pod::Spec.new do |s|
   s.author       = { 'SwiftLog contributors' => 'https://github.com/yuyedaidao/swift-log' }
   s.source       = { :git => 'https://github.com/yuyedaidao/swift-log.git', :tag => s.version.to_s }
 
+  # SwiftPM 源码使用 package 访问级别；CocoaPods 没有自动提供 package name。
+  s.pod_target_xcconfig = { 'OTHER_SWIFT_FLAGS' => '-package-name swift-log' }
+  # 当前 Xcode 支持的最低 Apple 平台版本，避免 CocoaPods 使用过低默认值。
+  s.ios.deployment_target = '13.0'
+  s.osx.deployment_target = '10.13'
   s.swift_version = '6.2'
   s.source_files = 'Sources/Logging/**/*.swift'
   s.module_name  = 'Logging'
