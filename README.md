@@ -19,6 +19,22 @@ choose from the many
 
 ## Quick Start
 
+### CocoaPods
+
+Add SwiftLog to your `Podfile`:
+
+```ruby
+pod 'SwiftLog', '~> 1.15.0'
+```
+
+Then import the `Logging` module:
+
+```swift
+import Logging
+```
+
+Before publishing, create the `1.15.0` Git tag in this fork so CocoaPods can resolve the source.
+
 The following snippet shows how to add SwiftLog to your Swift Package:
 
 ```swift
@@ -71,4 +87,3 @@ for the `swift-log` keyword.
 ## Building with CMake
 
 While Swift Package Manager (SPM) is the primary build system for development and testing, CMake build support is also available for integrated or mixed build environments if needed. Note that tests are not included in the CMake build, they are managed through Swift Package Manager with `swift test`.
-
