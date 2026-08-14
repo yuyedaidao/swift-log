@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # CocoaPods 的 Pod 名称为 YQSwiftLog，Swift 模块名保持为 Logging。
   s.name         = 'YQSwiftLog'
-  s.version      = '1.15.0'
+  s.version      = '2.0.0'
   s.summary      = 'A logging API for Swift.'
   s.description  = <<-DESC
     SwiftLog provides a unified, performant, and ergonomic logging API for Swift.
